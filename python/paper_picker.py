@@ -4,12 +4,9 @@ from datetime import datetime
 from random import randrange
 
 
-def paper_picker():
+def paper_picker(kw_title):
     # Base api query url
     base_url = 'http://export.arxiv.org/api/query?';
-
-    #search keyword
-    kw_title = 'cosmology'
 
     # Search parameters
     search_query = urllib.parse.quote("ti:"+kw_title)
