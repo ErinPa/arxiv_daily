@@ -1,0 +1,9 @@
+<h1>Paper overview</h1>
+@if (paper$ | async; as paper) {
+    <p>Title: {{ paper.title }}</p>
+    <p>Authors: {{ paper.authors }}</p>
+    <p>Date: {{ paper.date }}</p>
+    <p>Link: {{ paper.href }}</p>
+    <p>Authors: {{ paper.authors }}</p>
+    <p>Summary: {{ paper.summary }}</p>
+}
